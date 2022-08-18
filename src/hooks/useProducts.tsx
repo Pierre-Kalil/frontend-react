@@ -4,7 +4,7 @@ import productsCategory from "../database/productsCategory.json";
 
 import { IProductsProps } from "../types/types";
 
-export const useProducts = () => {
+const useProducts = () => {
   const [products, setProducts] = useState<IProductsProps[]>(
     productsCategory.data.nodes
   );
@@ -28,3 +28,5 @@ export const useProducts = () => {
     search,
   };
 };
+
+export default useProducts;
