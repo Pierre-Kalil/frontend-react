@@ -5,12 +5,14 @@ import productsCategory from "../database/productsCategory.json";
 import { IProductsProps } from "../types/types";
 
 export const useProducts = () => {
-  const [products, setProducts] = useState<IProductsProps[]>([]);
+  const [products, setProducts] = useState<IProductsProps[]>(
+    productsCategory.data.nodes
+  );
   const [search, setSearch] = useState("");
 
-  useEffect(() => {
-    setProducts(productsCategory.data.nodes);
-  }, []);
+  // useEffect(() => {
+  //   setProducts(productsCategory.data.nodes);
+  // }, []);
 
   const filteredProducts =
     search.length > 0
