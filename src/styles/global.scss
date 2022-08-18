@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #0f0e13;
-  color: #ffffff;
+  max-width: 100%;
 }
 
 @media (max-width: 1080px) {
@@ -22,6 +21,11 @@ body,
 input,
 button {
   font: 400 1rem "Roboto", sans-serif;
+}
+
+body {
+  background: #0f0e13;
+  color: #ffffff;
 }
 
 button {

@@ -1,0 +1,36 @@
+.card-container {
+  width: 200px;
+  height: 280px;
+  background: snow;
+  border-radius: 8px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .card-img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: contain;
+    background: snow;
+  }
+
+  .card-text {
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .heading {
+    background: snow;
+    color: black;
+  }
+
+  @media (min-width: 769px) {
+    width: 300px;
+    height: 350px;
+    transition: 0.3s;
+  }
+}

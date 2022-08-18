@@ -17,3 +17,7 @@ export interface IProductsProps {
   images: IImageProductProps[];
   category: ICategoryProductProps;
 }
+
+export interface ICardProductProps {
+  product: IProductsProps;
+}

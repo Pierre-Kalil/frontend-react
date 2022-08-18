@@ -5,6 +5,16 @@
   align-items: center;
   flex-wrap: wrap;
 
-  width: 100%;
+  max-width: 100%;
   height: auto;
+
+  .container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 90%;
+    gap: 20px;
+  }
 }
