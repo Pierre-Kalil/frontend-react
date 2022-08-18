@@ -1,6 +1,6 @@
 .card-container {
   width: 200px;
-  height: 280px;
+  height: 25rem;
   background: snow;
   border-radius: 8px;
   overflow: hidden;
@@ -18,19 +18,35 @@
 
   .card-text {
     font-size: 14px;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
-    text-align: center;
+
+    p {
+      margin: 20px;
+    }
   }
 
   .heading {
     background: snow;
     color: black;
   }
-
+  a {
+    color: black;
+    :hover {
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
   @media (min-width: 769px) {
     width: 300px;
-    height: 350px;
+    height: 30rem;
     transition: 0.3s;
+
+    .card-text {
+      width: 90%;
+    }
+
+    p {
+      font-size: 16px;
+    }
   }
 }

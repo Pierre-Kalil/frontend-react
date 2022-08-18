@@ -8,7 +8,7 @@ import { blogVariants } from "./variants";
 
 const Home = () => {
   const { products, filteredProducts, search, setSearch } = useProducts();
-
+  console.log(products);
   return (
     <section className="home-container">
       <aside>

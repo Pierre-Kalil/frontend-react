@@ -1,16 +1,8 @@
 import "./styles.scss";
 import { motion } from "framer-motion";
 import { ICardProductProps } from "../../types/types";
-
-const postPreviewVariants = {
-  initial: { x: "10%", opacity: 0 },
-  enter: { x: 0, opacity: 1, transition: { dealy: 0 } },
-  exit: {
-    x: "-10%",
-    opacity: 0,
-    transition: { dealy: 0 },
-  },
-};
+import { postPreviewVariants } from "./variants";
+import { Link } from "react-router-dom";
 
 export const CardProduct = ({ product }: ICardProductProps) => {
   return (
@@ -22,8 +14,7 @@ export const CardProduct = ({ product }: ICardProductProps) => {
       />
       <div className="card-text">
         <p className="heading">{product.name}</p>
-        {/* <p>{product.shortDescription}</p> */}
-        {/* <Link to={`/post/${product.id}`}>Learn more</Link> */}
+        <Link to={`/product/${product.id}`}>Specificações</Link>
       </div>
     </motion.div>
   );
