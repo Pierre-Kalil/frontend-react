@@ -6,9 +6,11 @@
   width: 200px;
   height: 25rem;
   padding: 1rem;
-  background: #fff;
   border-radius: 8px;
   overflow: hidden;
+
+  background: #fff;
+  box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.1);
 
   .card-img {
     max-width: 100%;
@@ -34,8 +36,9 @@
   a {
     color: black;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    :hover {
-      color: rgba(0, 0, 0, 0.5);
+    &:hover {
+      color: #393e4d;
+      transition: 0.2s ease;
     }
   }
   @media (min-width: 730px) {

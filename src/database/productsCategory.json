@@ -51,6 +51,40 @@
           "_id": "bbf9aaa9b8d897480f9e0ade81c087843bf18590fa053eca43e6966e",
           "name": "Aerosol"
         }
+      },
+      {
+        "name": "Rexona Clinical Women Antitranspirante Aerosol Mini",
+        "shortDescription": "3 veces más protección que un antitranspirante común con el desodorante clinical aerosol classic para mujer, ahora en tamaño mini.",
+        "id": "-96d15f83-22cd-53fa-b6ca-fa88e54b2d4c",
+        "images": [
+          {
+            "alt": "Imagen de aerosol Rexona Clinical Women Antitranspirante Classic 55ml",
+            "asset": {
+              "url": "https://cdn.sanity.io/images/27438tds/rexona-staging-ar/6a54132b81da200a93fbb6690eb14562646e0c90-5000x5000.png"
+            }
+          }
+        ],
+        "category": {
+          "_id": "bbf9aaa9b8d897480f9e0ade81c087843bf18590fa053eca43e6966e",
+          "name": "Aerosol"
+        }
+      },
+      {
+        "name": "Rexona Men Antitranspirante Aerosol V8 Laton",
+        "shortDescription": "Antitranspirante en aerosol con tecnología MotionSense, desarrollado especialmente para los fanáticos de los autos, protección por 72hs en tamaño ahorro.",
+        "id": "-4217fd75-1ad8-5827-862a-b4302b4f8285",
+        "images": [
+          {
+            "alt": "Imagen de envase Rexona para hombres Antitranspirante Aerosol V8 250ml",
+            "asset": {
+              "url": "https://cdn.sanity.io/images/27438tds/rexona-staging-ar/9a49289f8d784e2cc51079f509ff9d0cc89c1ff6-5000x5000.png"
+            }
+          }
+        ],
+        "category": {
+          "_id": "bbf9aaa9b8d897480f9e0ade81c087843bf18590fa053eca43e6966e",
+          "name": "Aerosol"
+        }
       }
     ]
   }
