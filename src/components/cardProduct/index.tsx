@@ -14,7 +14,7 @@ export const CardProduct = ({ product }: ICardProductProps) => {
       />
       <div className="card-text">
         <p className="heading">{product.name}</p>
-        <Link to={`/product/${product.id}`}>Specificações</Link>
+        <Link to={`/product/${product.id}`}>Especificações</Link>
       </div>
     </motion.div>
   );

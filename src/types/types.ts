@@ -21,3 +21,9 @@ export interface IProductsProps {
 export interface ICardProductProps {
   product: IProductsProps;
 }
+
+export interface IInputProps {
+  placeholder?: string;
+  value?: string | number;
+  onChange?: (e: any) => void;
+}

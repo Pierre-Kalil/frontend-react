@@ -1,18 +1,19 @@
 import "./styles.scss";
+import { motion } from "framer-motion";
+import { homeVariants } from "./variants";
 
 import useProducts from "../../hooks/useProducts";
 
-import { motion } from "framer-motion";
+import { Input } from "../../components/input";
 import { CardProduct } from "../../components/cardProduct";
-import { blogVariants } from "./variants";
 
 const Home = () => {
   const { products, filteredProducts, search, setSearch } = useProducts();
-  console.log(products);
+
   return (
     <section className="home-container">
-      <aside>
-        <input
+      <aside className="input-home">
+        <Input
           placeholder="Pesquise por produto ou categoria"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
@@ -22,7 +23,7 @@ const Home = () => {
         initial="initial"
         animate="enter"
         exit="exit"
-        variants={blogVariants}
+        variants={homeVariants}
         className="container-cards"
       >
         {(search.length > 0 ? filteredProducts : products).map((product) => (

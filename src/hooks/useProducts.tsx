@@ -16,8 +16,10 @@ const useProducts = () => {
 
   const filteredProducts =
     search.length > 0
-      ? products.filter((product) =>
-          product.category.name.toLowerCase().includes(search)
+      ? products.filter(
+          (product) =>
+            product.category.name.toLowerCase().includes(search) ||
+            product.name.toLowerCase().includes(search)
         )
       : [];
 

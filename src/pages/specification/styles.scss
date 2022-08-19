@@ -11,6 +11,7 @@
   margin: 0 auto;
 
   a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     &:hover {
       color: rgba(255, 255, 255, 0.5);
       transition: 0.2s ease;
@@ -28,7 +29,7 @@
 
     border-radius: 8px;
     color: black;
-    background: snow;
+    background: #fff;
 
     .specification-text {
       display: flex;
@@ -50,7 +51,7 @@
     .specification-img {
       width: auto;
       object-fit: contain;
-      background: snow;
+      background: #fff;
     }
 
     @media (min-width: 769px) {

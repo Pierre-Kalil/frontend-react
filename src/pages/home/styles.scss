@@ -9,6 +9,11 @@
   height: auto;
   padding: 10px;
 
+  .input-home {
+    width: 100%;
+    padding: 20px;
+  }
+
   .container-cards {
     display: flex;
     justify-content: center;
@@ -17,5 +22,16 @@
 
     width: 90%;
     gap: 20px;
+  }
+
+  @media (min-width: 600px) {
+    .input-home {
+      width: 80%;
+    }
+  }
+  @media (min-width: 800px) {
+    .input-home {
+      width: 50%;
+    }
   }
 }

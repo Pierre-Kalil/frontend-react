@@ -1,19 +1,20 @@
 .card-container {
-  width: 200px;
-  height: 25rem;
-  background: snow;
-  border-radius: 8px;
-  overflow: hidden;
-
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  width: 200px;
+  height: 25rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
 
   .card-img {
     max-width: 100%;
     width: 100%;
     object-fit: contain;
-    background: snow;
+    background: #fff;
   }
 
   .card-text {
@@ -27,16 +28,17 @@
   }
 
   .heading {
-    background: snow;
+    background: #fff;
     color: black;
   }
   a {
     color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     :hover {
       color: rgba(0, 0, 0, 0.5);
     }
   }
-  @media (min-width: 769px) {
+  @media (min-width: 730px) {
     width: 300px;
     height: 30rem;
     transition: 0.3s;
