@@ -12,6 +12,13 @@
   background: #fff;
   box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.1);
 
+  .image {
+    position: whatever;
+    background-repeat: no-repeat;
+    background-position: whatever whatever;
+    background: rgba(0, 0, 0, 0.07);
+  }
+
   .card-img {
     max-width: 100%;
     width: 100%;

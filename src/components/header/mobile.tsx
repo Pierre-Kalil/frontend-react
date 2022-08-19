@@ -7,7 +7,7 @@ import { RiMenuUnfoldFill } from "react-icons/ri";
 
 export const Mobile = () => {
   const [open, setOpen] = useState(false);
-  console.log(open);
+
   return (
     <>
       <div className="icon" onClick={() => setOpen(!open)}>

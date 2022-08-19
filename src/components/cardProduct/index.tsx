@@ -12,6 +12,7 @@ export const CardProduct = ({ product }: ICardProductProps) => {
         src={product?.images[0].asset.url}
         alt={product.name}
       />
+
       <div className="card-text">
         <p className="heading">{product.name}</p>
         <Link to={`/product/${product.id}`}>Especificações</Link>

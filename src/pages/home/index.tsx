@@ -9,7 +9,15 @@ import { CardProduct } from "../../components/cardProduct";
 import Header from "../../components/header";
 
 const Home = () => {
-  const { products, filteredProducts, search, setSearch } = useProducts();
+  const {
+    products,
+    filteredProducts,
+    search,
+    setSearch,
+    handleNextPage,
+    handlePreviousPage,
+    setCurrentPage,
+  } = useProducts();
 
   return (
     <>
@@ -22,6 +30,11 @@ const Home = () => {
             onChange={(e) => setSearch(e.target.value)}
           />
         </aside>
+        <div className="button-home">
+          <button onClick={handlePreviousPage}>Anterior</button>
+          <button onClick={handleNextPage}>Próximo</button>
+        </div>
+
         <motion.aside
           initial="initial"
           animate="enter"
