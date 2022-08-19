@@ -22,8 +22,9 @@
   .card-img {
     max-width: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
     background: #fff;
+    image-resolution: 300dpi snap;
   }
 
   .card-text {

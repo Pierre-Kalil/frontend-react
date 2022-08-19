@@ -12,7 +12,7 @@ export const Specification = () => {
   const { products } = useProducts();
 
   const product = products.find((product) => product.id === productId);
-
+  console.log(product);
   return (
     <>
       <Header />
@@ -27,7 +27,7 @@ export const Specification = () => {
         <div className="specification">
           <img
             className="specification-img"
-            src={product?.images[0].asset.url}
+            src={"../" + product?.images[0].asset.url}
             alt={product?.name}
           />
           <div className="specification-text">
