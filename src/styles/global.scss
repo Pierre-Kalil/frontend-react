@@ -5,6 +5,14 @@
   max-width: 100%;
 }
 
+:root {
+  --white: #fff;
+  --white-snow: snow;
+  --withe-shadow-light: #393e4d;
+  --black-shadow: #1e1e1e;
+  --cyan-light: #d9d9d9;
+}
+
 @media (max-width: 1080px) {
   html {
     font-size: 93.75%;
@@ -24,12 +32,13 @@ button {
 }
 
 body {
-  background: rgba(31, 30, 35, 100%);
-  color: #ffffff;
+  background: #1e1e1e;
+  color: var(--white);
 }
 
 button,
-svg {
+svg,
+li {
   cursor: pointer;
 }
 

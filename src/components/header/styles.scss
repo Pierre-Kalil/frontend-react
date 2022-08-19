@@ -1,7 +1,7 @@
 @mixin UlStyle($bool) {
   display: flex;
   flex-flow: column nowrap;
-  background: #fff;
+  background: var(--white);
   position: fixed;
   top: 0;
   right: 0;
@@ -20,12 +20,12 @@
     font-size: 18px;
 
     :hover {
-      color: black;
+      color: var(--black-shadow);
       transition: 0.3s;
     }
 
     a {
-      color: #fff;
+      color: var(--white);
 
       @media (min-width: 768px) {
         font-size: 18px;
@@ -44,8 +44,8 @@
   position: fixed;
   z-index: 2;
 
-  background-color: snow;
-  color: black;
+  background-color: var(--white-snow);
+  color: var(--black-shadow);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 
   h1 {

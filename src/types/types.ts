@@ -27,3 +27,7 @@ export interface IInputProps {
   value?: string | number;
   onChange?: (e: any) => void;
 }
+
+export interface IOptionsProps {
+  open: boolean;
+}

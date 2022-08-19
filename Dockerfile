@@ -1,0 +1,8 @@
+FROM node:17
+WORKDIR /app
+COPY package.json .
+RUN yarn
+COPY . .
+ENV REACT_APP_API_BASE_URL=$REACT_APP_API_BASE_URL
+EXPOSE 5173
+RUN yarn build

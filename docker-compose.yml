@@ -1,0 +1,13 @@
+services:
+  tbb-react:
+    container_name: tbb
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/app/src
+    command: yarn dev
+    expose:
+      - 5173
+    ports:
+      - 5173:5173

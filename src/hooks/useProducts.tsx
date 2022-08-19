@@ -9,6 +9,7 @@ const PER_PAGE = 10;
 const useProducts = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const offset = currentPage * PER_PAGE;
+
   const [products, setProducts] = useState<IProductsProps[]>(
     productsCategory.data.nodes.slice(offset, offset + PER_PAGE)
   );
@@ -52,8 +53,8 @@ const useProducts = () => {
     handleNextPage,
     currentPage,
     setCurrentPage,
-
     handlePreviousPage,
+    setProducts,
   };
 };
 

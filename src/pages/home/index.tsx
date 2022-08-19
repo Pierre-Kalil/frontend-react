@@ -1,9 +1,7 @@
 import "./styles.scss";
 import { motion } from "framer-motion";
 import { homeVariants } from "./variants";
-
 import useProducts from "../../hooks/useProducts";
-
 import { Input } from "../../components/input";
 import { CardProduct } from "../../components/cardProduct";
 import Header from "../../components/header";
@@ -16,7 +14,6 @@ const Home = () => {
     setSearch,
     handleNextPage,
     handlePreviousPage,
-    setCurrentPage,
   } = useProducts();
 
   return (
