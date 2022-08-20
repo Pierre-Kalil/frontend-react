@@ -11,13 +11,15 @@
   height: auto;
   margin: 0 auto;
 
+  color: var(--black-shadow);
   a {
     font-size: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    &:hover {
-      color: var(--cyan-light);
-      transition: 0.2s ease;
-    }
+    color: rgba(255, 255, 255, 0.5);
+  }
+  a:hover {
+    transition: all 0.2s ease;
+    color: #393e4d;
   }
 
   .specification {
@@ -30,7 +32,6 @@
     padding: 24px;
 
     border-radius: 8px;
-    color: var(--back-shadow);
     background: var(--white);
 
     .specification-text {

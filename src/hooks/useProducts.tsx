@@ -4,9 +4,8 @@ import productsCategory from "../database/productsCategory.json";
 
 import { IProductsProps } from "../types/types";
 
-const PER_PAGE = 10;
-
 const useProducts = () => {
+  const PER_PAGE = 10;
   const [currentPage, setCurrentPage] = useState(0);
   const offset = currentPage * PER_PAGE;
 

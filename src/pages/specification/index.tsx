@@ -4,15 +4,18 @@ import { motion } from "framer-motion";
 import { Link, useParams } from "react-router-dom";
 
 import { postVariants } from "./variants";
-import useProducts from "../../hooks/useProducts";
 import Header from "../../components/header";
+import { IProductsProps } from "../../types/types";
+
+import productCategory from "../../database/productsCategory.json";
 
 export const Specification = () => {
   const { productId } = useParams();
-  const { products } = useProducts();
 
-  const product = products.find((product) => product.id === productId);
-  console.log(product);
+  const product: IProductsProps | any =
+    productId?.length &&
+    productCategory.data.nodes.find((product) => product.id == productId);
+
   return (
     <>
       <Header />
