@@ -11,6 +11,10 @@ docker-compose up
 ### <font color="red"> Rodar localmente </font>
 
 ```json
+yarn 
+```
+
+```json
 yarn dev
 ```
 
