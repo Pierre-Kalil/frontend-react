@@ -28,8 +28,12 @@ const Home = () => {
           />
         </aside>
         <div className="button-home">
-          <button onClick={handlePreviousPage}>Anterior</button>
-          <button onClick={handleNextPage}>Próximo</button>
+          <button id="previous" onClick={handlePreviousPage}>
+            Anterior
+          </button>
+          <button id="next" onClick={handleNextPage}>
+            Próximo
+          </button>
         </div>
 
         <motion.aside
