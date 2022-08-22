@@ -34,7 +34,7 @@ describe("e2e test", () => {
     cy.get("a").click();
   });
 
-  it("open card product in page tree", () => {
+  it("open card product in page three", () => {
     cy.get("button[id='next']").click();
     cy.wait(1000);
     cy.get("button[id='next']").click();
